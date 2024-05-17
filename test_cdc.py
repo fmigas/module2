@@ -25,7 +25,8 @@ def insert_data_to_mongodb(uri, database_name, collection_name, data):
 
 
 if __name__ == "__main__":
-    mongodb_uri = "mongodb://3.71.201.185:30001,3.71.201.185:30002,3.71.201.185:30003/?replicaSet=my-replica-set"
+    # mongodb_uri = "mongodb://3.71.201.185:30001,3.71.201.185:30002,3.71.201.185:30003/?replicaSet=my-replica-set"
+    mongodb_uri = "mongodb://3.71.201.185:30001"
     database_name = "franek"
     collection_name = "llm"
     test_data = {"name": "LLM TWIN"}
