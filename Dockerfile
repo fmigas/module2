@@ -8,5 +8,7 @@ ENV MONGO_INITDB_ROOT_PASSWORD=fmigas123
 # Expose the default MongoDB port
 EXPOSE 27017
 
+VOLUME /data/db
+
 # Start the MongoDB service
 CMD ["mongod"]
