@@ -25,9 +25,12 @@ def insert_data_to_mongodb(uri, database_name, collection_name, data):
 
 
 if __name__ == "__main__":
-    # mongodb_uri = "mongodb://3.71.201.185:30001,3.71.201.185:30002,3.71.201.185:30003/?replicaSet=my-replica-set"
-    mongodb_uri = "mongodb://3.71.201.185:30001"
+    mongodb_uri = "mongodb://3.76.251.231:30001,3.76.251.231:30002,3.76.251.231:30003/?replicaSet=my-replica-set"
+    # mongodb_uri = "mongodb://3.71.201.185:27017"
+    # mongodb_uri = "mongodb://fmigas:fmigas123@3.76.251.231:27017"
+    # mongodb_uri = "mongodb://3.76.251.231:27017"
+    # mongodb_uri = "mongodb://fmigas:fmigas123@ec2-3-71-201-185.eu-central-1.compute.amazonaws.com:27017/franek"
     database_name = "franek"
     collection_name = "llm"
-    test_data = {"name": "LLM TWIN"}
+    test_data = {"name2": "coś tam nowego"}
     insert_data_to_mongodb(mongodb_uri, database_name, collection_name, test_data)
